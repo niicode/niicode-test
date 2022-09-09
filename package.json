@@ -1,0 +1,11 @@
+{
+  "name": "test-librabry",
+  "version": "1.0.0",
+  "description": "A test library to understand how jest works",
+  "main": "app.test.js",
+  "scripts": {
+    "test": "node app.test.js"
+  },
+  "author": "niicode",
+  "license": "ISC"
+}
