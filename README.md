@@ -24,7 +24,7 @@ $ npm install --save niicode-test
 - Import the `test` function from `niicode-test` and use it to test your code.
 
 ```js
-const { test, describe, expect } = require('niicode-test');
+const { test, describe, expect } = require('niicode-test/module/test.js');
 
 describe('test', () => {
   test('should return true', () => {
