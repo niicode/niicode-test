@@ -1,6 +1,6 @@
 {
   "name": "niicode-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A test library to understand how jest works",
   "main": "app.test.js",
   "scripts": {
