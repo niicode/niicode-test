@@ -65,6 +65,17 @@ The name of the test.
 > 
 > Returns: `void`
 
+## Contributing
+- Fork this repository on GitHub. [Fork](https://github.com/niicode/niicode-test.git)
+- Clone your forked repository to your local machine.
+- Create a new branch for your changes.
+- Make your changes.
+- Commit your changes.
+- Push your changes to your forked repository.
+- Create a pull request.
+- Wait for your pull request to be reviewed and merged.
+- Celebrate! 🎉
+
 ## License
 
 MIT © [niicode](./MIT.md)

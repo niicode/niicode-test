@@ -1,134 +1,134 @@
-//add function to global scope
+// add function to global scope
 
-function expect(actual) {
+function expect (actual) {
   return {
-    toBe(expected) {
+    toBe (expected) {
       if (actual !== expected) {
-        throw new Error(`Expected ${actual} but got ${expected}`);
+        throw new Error(`Expected ${actual} but got ${expected}`)
       } else {
-        return true;
+        return true
       }
     },
-    toEqual(expected) {
+    toEqual (expected) {
       if (actual !== expected) {
-        throw new Error(`Expected ${actual} but got ${expected}`);
+        throw new Error(`Expected ${actual} but got ${expected}`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeGreaterThan(expected) {
+    toBeGreaterThan (expected) {
       if (actual <= expected) {
-        throw new Error(`Expected ${actual} to be greater than ${expected}`);
+        throw new Error(`Expected ${actual} to be greater than ${expected}`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeLessThan(expected) {
+    toBeLessThan (expected) {
       if (actual >= expected) {
-        throw new Error(`Expected ${actual} to be less than ${expected}`);
+        throw new Error(`Expected ${actual} to be less than ${expected}`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeGreaterThanOrEqual(expected) {
+    toBeGreaterThanOrEqual (expected) {
       if (actual < expected) {
         throw new Error(
           `Expected ${actual} to be greater than or equal to ${expected}`
-        );
+        )
       } else {
-        return true;
+        return true
       }
     },
-    toBeLessThanOrEqual(expected) {
+    toBeLessThanOrEqual (expected) {
       if (actual > expected) {
         throw new Error(
           `Expected ${actual} to be less than or equal to ${expected}`
-        );
+        )
       } else {
-        return true;
+        return true
       }
     },
-    toBeTruthy() {
+    toBeTruthy () {
       if (!actual) {
-        throw new Error(`Expected ${actual} to be truthy`);
+        throw new Error(`Expected ${actual} to be truthy`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeFalsy() {
+    toBeFalsy () {
       if (actual) {
-        throw new Error(`Expected ${actual} to be falsy`);
+        throw new Error(`Expected ${actual} to be falsy`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeNaN() {
+    toBeNaN () {
       if (!Number.isNaN(actual)) {
-        throw new Error(`Expected ${actual} to be NaN`);
+        throw new Error(`Expected ${actual} to be NaN`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeNull() {
+    toBeNull () {
       if (actual !== null) {
-        throw new Error(`Expected ${actual} to be null`);
+        throw new Error(`Expected ${actual} to be null`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeUndefined() {
+    toBeUndefined () {
       if (actual !== undefined) {
-        throw new Error(`Expected ${actual} to be undefined`);
+        throw new Error(`Expected ${actual} to be undefined`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeDefined() {
+    toBeDefined () {
       if (actual === undefined) {
-        throw new Error(`Expected ${actual} to be defined`);
+        throw new Error(`Expected ${actual} to be defined`)
       } else {
-        return true;
+        return true
       }
     },
-    toContain(expected) {
+    toContain (expected) {
       if (!actual.includes(expected)) {
-        throw new Error(`Expected ${actual} to contain ${expected}`);
+        throw new Error(`Expected ${actual} to contain ${expected}`)
       } else {
-        return true;
+        return true
       }
     },
-    toBeInstanceOf(expected) {
+    toBeInstanceOf (expected) {
       if (!(actual instanceof expected)) {
-        throw new Error(`Expected ${actual} to be an instance of ${expected}`);
+        throw new Error(`Expected ${actual} to be an instance of ${expected}`)
       } else {
-        return true;
+        return true
       }
     },
-    toThrow(expected) {
+    toThrow (expected) {
       try {
-        actual();
+        actual()
       } catch (err) {
         if (err !== expected) {
-          throw new Error(`Expected ${err} to be ${expected}`);
+          throw new Error(`Expected ${err} to be ${expected}`)
         } else {
-          return true;
+          return true
         }
       }
-    },
-  };
+    }
+  }
 }
 
-function describe(description, callback) {
-  console.log(description);
-  callback();
+function describe (description, callback) {
+  console.log(description)
+  callback()
 }
 
-function test(description, callback) {
+function test (description, callback) {
   try {
-    callback();
-    console.log(`✅ ${description}`);
+    callback()
+    console.log(`✅ ${description}`)
   } catch (err) {
-    console.log(`❌ ${description}`);
+    console.log(`❌ ${description}`)
   }
 }
 
