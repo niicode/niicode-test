@@ -66,3 +66,5 @@ The name of the test.
 > Returns: `void`
 
 ## License
+
+MIT © [niicode](./MIT.md)
