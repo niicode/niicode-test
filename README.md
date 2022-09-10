@@ -78,4 +78,4 @@ The name of the test.
 
 ## License
 
-MIT © [niicode](./MIT.md)
+MIT © [niicode](https://github.com/niicode/niicode-test/blob/main/MIT.md)
